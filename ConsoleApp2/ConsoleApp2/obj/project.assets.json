@@ -7043,10 +7043,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\users\\ueno\\documents\\visual studio 2017\\Projects\\ConsoleApp2\\ConsoleApp2\\ConsoleApp2.csproj",
+      "projectUniqueName": "C:\\Users\\ueno\\Documents\\Visual Studio 2017\\Projects\\ConsoleApp2\\ConsoleApp2\\ConsoleApp2.csproj",
       "projectName": "ConsoleApp2",
-      "projectPath": "c:\\users\\ueno\\documents\\visual studio 2017\\Projects\\ConsoleApp2\\ConsoleApp2\\ConsoleApp2.csproj",
-      "outputPath": "c:\\users\\ueno\\documents\\visual studio 2017\\Projects\\ConsoleApp2\\ConsoleApp2\\obj\\",
+      "projectPath": "C:\\Users\\ueno\\Documents\\Visual Studio 2017\\Projects\\ConsoleApp2\\ConsoleApp2\\ConsoleApp2.csproj",
+      "outputPath": "C:\\Users\\ueno\\Documents\\Visual Studio 2017\\Projects\\ConsoleApp2\\ConsoleApp2\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"

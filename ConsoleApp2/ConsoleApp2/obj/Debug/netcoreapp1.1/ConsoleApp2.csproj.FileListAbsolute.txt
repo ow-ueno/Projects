@@ -6,3 +6,4 @@ c:\users\ueno\documents\visual studio 2017\Projects\ConsoleApp2\ConsoleApp2\bin\
 c:\users\ueno\documents\visual studio 2017\Projects\ConsoleApp2\ConsoleApp2\obj\Debug\netcoreapp1.1\ConsoleApp2.AssemblyInfo.cs
 c:\users\ueno\documents\visual studio 2017\Projects\ConsoleApp2\ConsoleApp2\obj\Debug\netcoreapp1.1\ConsoleApp2.dll
 c:\users\ueno\documents\visual studio 2017\Projects\ConsoleApp2\ConsoleApp2\obj\Debug\netcoreapp1.1\ConsoleApp2.pdb
+C:\Users\ueno\Documents\Visual Studio 2017\Projects\ConsoleApp2\ConsoleApp2\obj\Debug\netcoreapp1.1\ConsoleApp2.csprojResolveAssemblyReference.cache

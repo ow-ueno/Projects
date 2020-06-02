@@ -2,47 +2,54 @@
 
 namespace ConsoleApp2
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
             //最初はいつもここから
             Console.WriteLine("Hello World!");
+            //ここを変えれば出力する変換元がいくつからいくつまでかを制御できる
+            int start = 9880;
+            int stop = 9899;
 
             if (args.Length >= 1 && args[0] == "-tom")
             {
-                for (int feet = 1; feet <= 10; feet++)
-                {
-                    double meter = FeetToMeter(feet);
-                    Console.WriteLine("{0} ft = {1:0.0000} m", feet, meter);
-                }
+                PrintFeetToMeterList(start, stop);
             }
             else
             {
-                for (int meter = 1; meter <= 10; meter++)
-                {
-                    double feet = MeterToFeet(meter);
-                    Console.WriteLine("{0} m = {1:0.0000} m", meter, feet);
-                }
+                PrintMeterToFeetList(start, stop);
             }
-
-            Console.ReadKey();
 
             Console.WriteLine("Press Any Key...");
 
+            Console.ReadKey();
+
         }
 
-        //meter2feet
-        static double FeetToMeter(int feet)
-        {
-            return feet * 0.3048;
+        static void PrintFeetToMeterList(int start, int stop) {
+
+            for (int feet = start; feet <= stop; feet++)
+            {
+
+                double meter = DistanceConverter.FeetToMeter(feet);
+                Console.WriteLine("{0} ft = {1:0.0000} m", feet, meter);
+
+            }
+
         }
 
-        //meter2feet
-        static double MeterToFeet(int meter)
+        static void PrintMeterToFeetList(int start, int stop)
         {
-            return meter * 3.2808;
+
+            for (int meter = start; meter <= stop; meter++)
+            {
+                double feet = DistanceConverter.MeterToFeet(meter);
+                Console.WriteLine("{0} m = {1:0.0000} feet", meter, feet);
+            }
+
         }
+
 
     }
 }
