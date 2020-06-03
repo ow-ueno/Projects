@@ -94,6 +94,7 @@ namespace ConsoleApp8
             Console.WriteLine("素数は{0}個です", count3);
 
             // 素数の出力をint型の変数n回プリントするメソッド。
+            // 直上でカプセル化したメソッドの"isPrime"を使用する。
             var outputPrime = new Action<int>(n =>
             {
                 int number = 1;
@@ -115,18 +116,37 @@ namespace ConsoleApp8
 
             DoAction(outputPrime, outputPrime);
 
+            //funcの試用。
+            //とりあえずCubeRootでも返してみようか
+            var CubeRoot = new Func<double, double>(d =>
+            {
+                return Math.Pow(d, (double)1/3);
+            });
+
+            DoFunc(CubeRoot, CubeRoot);
 
             Console.WriteLine("Press Any Key...");
             Console.ReadKey();
         }
 
-        //Actionを受け取ってconstの回数だけ実行する
+        //Actionを受け取ってconstの数字に沿って実行する
         public static void DoAction(Action<int> ActionA, Action<int> ActionB)
         {
 
             const int NUM = 25;
             ActionA(NUM);
             ActionB(NUM);
+
+        }
+
+        //Funcを受け取ってconstの数字に沿って実行する
+        public static void DoFunc(Func<double, double> FuncA, Func<double, double> FuncB)
+        {
+
+            const int NUM1 = 27;
+            Console.WriteLine("{0:0.0}の立方根は{1:0.0}です", NUM1, FuncA(NUM1));
+            const int NUM2 = 912673;
+            Console.WriteLine("{0:0.0}の立方根は{1:0.0}です", NUM2, FuncB(NUM2));
 
         }
 
