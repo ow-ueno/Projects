@@ -6,7 +6,7 @@ namespace ConsoleApp9
 {
     //LINQ
     //3.1演習
-    class Program
+    class Exam3_1
     {
         static void Main(string[] args)
         {
