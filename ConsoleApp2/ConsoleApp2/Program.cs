@@ -8,6 +8,7 @@ namespace ConsoleApp2
         {
             //最初はいつもここから
             Console.WriteLine("Hello World!");
+
             //ここを変えれば出力する変換元がいくつからいくつまでかを制御できる
             int start = 9880;
             int stop = 9899;
